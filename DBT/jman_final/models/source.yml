@@ -1,0 +1,12 @@
+version: 2
+ 
+sources:
+  - name: JMAN
+    database: JMAN
+    schema: JMAN_SCHEMA
+    tables:
+      - name: PROJECTASSIGNMENTSDATA2
+      - name: PROJECTS2
+      - name: TIMESHEETSDATA3
+      - name: USERSDATA2
+      - name: FEEDBACKSDATA2

@@ -1,0 +1,7 @@
+_id,firstName,lastName,email,password,isAdmin,hasChanged,__v,role
+6604e2cd3e2fbb3b09e08f7e,aaa,aaa,aaa@gmail.com,$2b$10$nBwhqiuubQNLxV8pebcnx.j81TrtHihVlOjhDEXuwN51QnS1dKW22,True,True,0,
+660513847f4178c15b6c4f73,qqq,qqq,qqq@gmail.com,aadi,True,True,0,engineer
+66052bcf4a92e3652e5bba9b,zzz,zzz,zzz@gmail.com,asd,False,True,0,engineer
+66055df40cc5235759e9bafb,aadish,n,aadishmn@gmail.com,aaa,True,False,0,
+66055fc82fc754793510854c,sss,sss,sss@gmail.com,sss,False,False,0,
+660babbc6b925d62823402dc,aadish,nagarajan,aadishn.20cse@kongu.eu,asas,False,True,0,

@@ -1,0 +1,30 @@
+WITH feedback_data AS (
+    SELECT
+        email,
+        role,
+        start_period,
+        end_period,
+        q1,
+        q2,
+        q3,
+        q4,
+        q5,
+        q6,
+        comments,
+    FROM
+        {{ source('JMAN', 'FEEDBACKSDATA2') }}
+)
+SELECT
+    email,
+    role,
+    start_period,
+    end_period,
+    q1,
+    q2,
+    q3,
+    q4,
+    q5,
+    q6,
+    comments
+FROM
+    feedback_data
