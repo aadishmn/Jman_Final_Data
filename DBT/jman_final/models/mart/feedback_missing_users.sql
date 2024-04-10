@@ -1,3 +1,9 @@
+{{
+    config(
+        tags=['mart']
+    )
+}}
+
 WITH user_data AS (
     SELECT
         "EMAIL",

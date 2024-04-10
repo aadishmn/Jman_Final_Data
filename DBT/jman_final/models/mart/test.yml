@@ -1,0 +1,91 @@
+version: 2
+
+models:
+  - name: project_resource_level
+    description: "Table containing project resource status."
+    columns:
+      - name: PROJECT_NAME
+        description: "Name of the project."
+        tests:
+          - not_null
+      - name: CLIENT_NAME
+        description: "Name of the client."
+        tests:
+          - not_null
+      - name: START_DATE
+        description: "Start date of the project."
+        tests:
+          - not_null
+        type: date
+      - name: END_DATE
+        description: "End date of the project."
+        tests:
+          - not_null
+        type: date
+      - name: TOTAL_ACTUAL_HOURS
+        description: "Total actual hours spent on the project."
+        tests:
+          - not_null
+   
+        type: int
+      - name: EXPECTED_TOTAL_HOURS
+        description: "Expected total hours for the project."
+        tests:
+          - not_null
+      
+        type: int
+      - name: RESOURCE_STATUS
+        description: "Resource status of the project (Over-Resourced or Under-Resourced)."
+        tests:
+          - not_null
+        type: string
+
+  - name: avg_project_allocation
+    description: "Table containing average allocation."
+    columns:
+      - name: AVG_ALLOCATION
+        description: "Average allocation."
+        tests:
+          - not_null
+      
+        type: float
+
+  - name: feedback_missing_users
+    description: "Table containing missing counts for each role."
+    columns:
+      - name: ROLE
+        description: "User role."
+        tests:
+          - not_null
+      - name: MISSING_COUNT
+        description: "Number of missing counts."
+        tests:
+          - not_null
+     
+        type: int
+
+  - name: user_project_allocations
+    description: "Table containing monthly allocation details."
+    columns:
+      - name: MONTH
+        description: "Month of the year."
+        tests:
+          - not_null
+       
+      - name: TOTALALLOCATIONS
+        description: "Total number of allocations for the month."
+        tests:
+          - not_null
+      
+        type: int
+      - name: USERSASSIGNED
+        description: "Number of users assigned in the month."
+        tests:
+          - not_null
+
+        type: int
+      - name: DIFFERENCE
+        description: "Difference between total allocations and users assigned."
+        tests:
+          - not_null
+        type: int
